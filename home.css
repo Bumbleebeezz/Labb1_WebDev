@@ -1,4 +1,6 @@
-h1 h2 h3 h4 h5 h6  {
+
+
+h1 {
   font-family: Yu Gothic Light;
 }
 
@@ -12,19 +14,14 @@ h1 h2 h3 h4 h5 h6  {
   margin: 10px;
   border: 3px solid #7a7a7a;
 }
-.buttons{
-  font-family: Yu Gothic Light;
-}
 .main {
   background-color: #cfcfcf;
 }
-.mainContent {
-  font-family: Yu Gothic Regular;
+.buttons{
+  font-family: Yu Gothic Light;
 }
-.profile_img {
-  border-radius: 50%;
-  margin: 10px;
-  border: 3px solid #7a7a7a;
+.footer {
+
 }
 .footer_img { 
   width: 100px;
@@ -35,5 +32,4 @@ h1 h2 h3 h4 h5 h6  {
 .contactInfo {
   color: white;
   align-self: center;
-  font-family: Yu Gothic Light
 }
