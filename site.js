@@ -7,63 +7,58 @@ class Product {
   }
 }
 
-const productList = [];
+const productList = [
+  new Product ("images/knittedShirt.jpg","Knitted Shirt",15.99,"Handmade by: Eva"),
+  new Product ("images/crotchetCat.jpg","Crochet Cat",5.99,"Handmade by: Maria")
+];
+console.log(productList);
+
 const cartList = [];
 
-// const myModal = document.getElementById('myModal')
-//   const myInput = document.getElementById('myInput')
-  
-//   myModal.addEventListener('shown.bs.modal', () => {
-//     myInput.focus()
-//   })
+const shopdiv = document.getElementById("shop");
+ 
+for (const product of productList){
+  const card = document.createElement("div");
+  const cardBody = document.createElement("div");
+  const cardImg = document.createElement("img");
+  const cardTitle = document.createElement("p");
+  const cardPrice = document.createElement("p");
+  const cardDescription = document.createElement("p");
+  const cardFooter = document.createElement("div");
+  const closeBtn = document.createElement("button");
+  const addCartBtn = document.createElement("button");
 
-async function getProducts(){
-  for (let product of productList){
-    const productImage = product.img;
-    const productTitle = product.title;
-    const productPrice = product.price;
-    const productDescription = product.description;
+  cardImg.src = product.img;
+  cardTitle.innerText = product.title;
+  cardPrice.innerText = product.price;
+  cardDescription.innerText = product.description;
+  closeBtn.innerText = "Close";
+  closeBtn.onclick = () => {
+    return
   }
-  displayProducts();
+  addCartBtn.innerText = "Add to cart";
+  addCartBtn.onclick = () => {
+    addProduct() 
+  }
+  cardBody.appendChild(cardImg);
+  cardBody.appendChild(cardTitle);
+  cardBody.appendChild(cardPrice);
+  cardBody.appendChild(cardDescription);
+  cardFooter.appendChild(closeBtn);
+  cardFooter.appendChild(addCartBtn);
+
+  card.appendChild(cardBody);
+  card.appendChild(cardFooter);
+
+  shopdiv.appendChild(card);
 }
 
-function displayProducts(){
-  for (const product of productList){
-    const li = document.createElement("li");
-    const card = document.createElement("div");
-    const cardBody = document.createElement("div");
-    const cardFooter = document.createElement("div");
-    const cardImg = document.createElement("img");
-    const closeBtn = document.createElement("button");
-    const addCartBtn = document.createElement("button");
-
-    applyStyles(li,card,cardBody,cardFooter,cardImg,closeBtn,addCartBtn);
-
-    closeBtn.innerText = "Close";
-    closeBtn.onclick = () => {
-      return
-    }
-    addCartBtn.innerText = "Add to cart";
-    addCartBtn.onclick = () => {
-      // add to cart[] 
-    }
-    cardBody.appendChild(cardImg);
-    cardFooter.appendChild(closeBtn);
-    cardFooter.appendChild(addCartBtn);
-
-    card.appendChild(cardBody);
-    card.appendChild(cardFooter);
-    li.appendChild(card);
-
-    productList.appendChild(li);
-  }
-}
 
 function showCart(){
   
 }
 function addProduct(){
-
+ 
 }
 function removeProduct(){
   
