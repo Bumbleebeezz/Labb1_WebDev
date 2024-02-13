@@ -17,7 +17,7 @@
       <div class="text-center">
         <img src="images/handmade.png" class="header_img" alt="" />
       </div>
-      <div class="text-center">
+      <div>
         <div class="buttons row">
           <a href="./home.html" class="col btn btn-secondary"> Home </a>
           <a href="./aboutUs.html" class="col btn btn-secondary"> About us </a>
@@ -25,17 +25,33 @@
         </div>
       </div>
     </header>
-    <main class="main container">
-      <div class="btn cart_btn">
-        <img src="images/ca" alt="">
+    <main class="main">
+      <div class="cart">
+        <button class="cart_btn btn btn-outline-secondary ">
+          <img class="cart_img" src="images/cart.png" alt="cart_btn">
+        </button>
       </div>
+      <ul id="products" class="list-group container">
+        <li class="list-group-item col">
+          <div class="card" style="width: 18rem;">
+            <img src="images/image_not_found.jpg" alt="">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
+              <p class="card-text">Some quick example text.</p>
+              <button href="#" class="card-btn">View product</button>
+              <button href="#" class="card-btn">Add to cart</button>
+            </div>
+          </div>
+        </li>
+      </ul>
     </main>
-    <footer class="footer bg-secondary container-fluid fixed-bottom">
+    <footer class="footer bg-secondary container-fluid">
       <div class="footerContent container row">
-        <div class="col-2">
+        <div class="col-auto">
           <img class="footer_img" src="images/handmade.png" alt="" />
         </div>
-        <div class="contactInfo col-10">
+        <div class="contactInfo col-auto">
           <p>Contact us:</p>
           <p>handmade@gmail.com</p>
         </div>

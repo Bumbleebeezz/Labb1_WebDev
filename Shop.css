@@ -14,13 +14,20 @@ h1 {
 }
 .product_img {
     width: auto;
-    height: auto;
+    height: 100px;
 }
 .buttons {
     font-family: Yu Gothic Light;
 }
-.cart_btn {
-  
+.list-group {
+  margin: 10px;
+}
+.cart {
+  margin: 10px;
+}
+.cart_img {
+  width: 30px;
+  height: auto;
 }
 .footer_img {
     width: 100px;
