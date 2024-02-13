@@ -25,26 +25,72 @@
         </div>
       </div>
     </header>
-    <main class="main">
-      <div class="cart">
-        <button class="cart_btn btn btn-outline-secondary ">
+    <main class="main container row m-3">
+      <div class="cart col-auto">
+        <button type="button" class="cart_btn btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#shopModal">
           <img class="cart_img" src="images/cart.png" alt="cart_btn">
         </button>
       </div>
-      <ul id="products" class="list-group container">
-        <li class="list-group-item col">
-          <div class="card" style="width: 18rem;">
-            <img src="images/image_not_found.jpg" alt="">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
-              <p class="card-text">Some quick example text.</p>
-              <button href="#" class="card-btn">View product</button>
-              <button href="#" class="card-btn">Add to cart</button>
+      <div class="cart row row-cols-1 row-cols-sm-2 row-cols-md-4">
+        <ul id="products" class="list-group col container">
+          <li class="list-group-item col-auto">
+            <div class="card" style="width: 18rem;">
+              <img src="images/image_not_found.jpg" alt="">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
+                <p class="card-text">Some quick example text.</p>
+                <button href="#" class="card-btn gray" data-bs-toggle="modal" data-bs-target="#shopModal">View product</button>
+                <button href="#" class="card-btn green">Add to cart</button>
+              </div>
+            </div>
+          </li>
+          <li class="list-group-item col-auto">
+            <div class="card" style="width: 18rem;">
+              <img src="images/image_not_found.jpg" alt="">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
+                <p class="card-text">Some quick example text.</p>
+                <button href="#" class="card-btn gray" data-bs-toggle="modal" data-bs-target="#shopModal">View product</button>
+                <button href="#" onclick="addProduct()" class="card-btn green">Add to cart</button>
+              </div>
+            </div>
+          </li>
+          <li class="list-group-item col-auto">
+            <div class="card" style="width: 18rem;">
+              <img src="images/image_not_found.jpg" alt="">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
+                <p class="card-text">Some quick example text.</p>
+                <button href="#" class="card-btn gray" data-bs-toggle="modal" data-bs-target="#shopModal">View product</button>
+                <button href="#" class="card-btn green">Add to cart</button>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      </div>
+<!-- Modal -->
+      <div class="modal fade" id="shopModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              ...
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-outline-success" data-bs-dismiss="modal">Check out</button>
             </div>
           </div>
-        </li>
-      </ul>
+        </div>
+      </div>
+<!-- /Modal -->
     </main>
     <footer class="footer bg-secondary container-fluid">
       <div class="footerContent container row">

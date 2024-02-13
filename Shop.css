@@ -19,11 +19,22 @@ h1 {
 .buttons {
     font-family: Yu Gothic Light;
 }
-.list-group {
-  margin: 10px;
+.card-btn {
+  border-radius: 10%;
+  font-family: Yu Gothic;
+}
+.gray {
+  background-color: #cfcece;
+}
+.green { 
+  background-color: rgb(85, 233, 85);
+}
+.red {
+  background-color: rgb(219, 60, 60);
 }
 .cart {
   margin: 10px;
+  
 }
 .cart_img {
   width: 30px;
