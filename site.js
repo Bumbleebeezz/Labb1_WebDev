@@ -8,8 +8,8 @@ class Product {
 }
 
 const productList = [
-  new Product ("images/knittedShirt.jpg","Knitted Shirt",15.99,"Handmade by: Eva"),
-  new Product ("images/crotchetCat.jpg","Crochet Cat",5.99,"Handmade by: Maria")
+  new Product ("images/knittedShirt.jpg","Knitted Shirt","15.99 $","Handmade by: Eva"),
+  new Product ("images/crotchetCat.jpg","Crochet Cat","5.99 $","Handmade by: Maria")
 ];
 
 const shopdiv = document.getElementById("shop");
@@ -23,6 +23,14 @@ for (const product of productList){
   const cardFooter = document.createElement("div");
   const infoBtn = document.createElement("button");
   const addCartBtn = document.createElement("button");
+
+  card.classList.add("product_card");
+  cardImg.classList.add("product_img");
+  cardTitle.classList.add("product_title");
+  cardPrice.classList.add("product_price");
+  cardDescription.classList.add("product_description");
+  infoBtn.classList.add("card-btn","grey");
+  addCartBtn.classList.add("card-btn","green");
 
   cardImg.src = product.img;
   cardTitle.innerText = product.title;
@@ -56,7 +64,7 @@ function showCart(){
   
 }
 function addProduct(){
-  
+
 }
 function removeProduct(){
   

@@ -12,16 +12,39 @@ h1 {
     margin: 10px;
     border: 3px solid #7a7a7a;
 }
+.product_card {
+  text-align: center;
+  justify-items: center;
+  margin: 50px;
+}
 .product_img {
     width: auto;
-    height: 100px;
+    height: 500px;
+    border-radius: 10%;
+}
+.product_title{
+  color: #4d8188;
+  font-family: fantasy;
+  font-size: 25px;
+}
+.product_price {
+  font-family: monospace;
+  color: #7a7a7a;
+  font-size: 25px;
+}
+.product_description {
+  font-family: Yu Gothic Light;
+  color: #7a7a7a;
+  font-size: 20px;
 }
 .buttons {
-    font-family: Yu Gothic Light;
+  font-family: Yu Gothic Light;
 }
 .card-btn {
   border-radius: 10%;
+  border: none;
   font-family: Yu Gothic;
+  margin: 10px;
 }
 .gray {
   background-color: #cfcece;
@@ -32,7 +55,7 @@ h1 {
 .red {
   background-color: rgb(219, 60, 60);
 }
-.cart {
+.card {
   margin: 10px;
 }
 .cart_img {
