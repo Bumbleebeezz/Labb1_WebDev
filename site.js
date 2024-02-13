@@ -11,12 +11,8 @@ const productList = [
   new Product ("images/knittedShirt.jpg","Knitted Shirt",15.99,"Handmade by: Eva"),
   new Product ("images/crotchetCat.jpg","Crochet Cat",5.99,"Handmade by: Maria")
 ];
-console.log(productList);
-
-const cartList = [];
 
 const shopdiv = document.getElementById("shop");
- 
 for (const product of productList){
   const card = document.createElement("div");
   const cardBody = document.createElement("div");
@@ -25,26 +21,28 @@ for (const product of productList){
   const cardPrice = document.createElement("p");
   const cardDescription = document.createElement("p");
   const cardFooter = document.createElement("div");
-  const closeBtn = document.createElement("button");
+  const infoBtn = document.createElement("button");
   const addCartBtn = document.createElement("button");
 
   cardImg.src = product.img;
   cardTitle.innerText = product.title;
   cardPrice.innerText = product.price;
   cardDescription.innerText = product.description;
-  closeBtn.innerText = "Close";
-  closeBtn.onclick = () => {
-    return
+  infoBtn.innerText = "View product information";
+  infoBtn.onclick = () => {
+    console.log("Product information");
   }
   addCartBtn.innerText = "Add to cart";
   addCartBtn.onclick = () => {
-    addProduct() 
+    console.log("Product added to cart");
+    addProduct();
   }
   cardBody.appendChild(cardImg);
   cardBody.appendChild(cardTitle);
   cardBody.appendChild(cardPrice);
   cardBody.appendChild(cardDescription);
-  cardFooter.appendChild(closeBtn);
+
+  cardFooter.appendChild(infoBtn);
   cardFooter.appendChild(addCartBtn);
 
   card.appendChild(cardBody);
@@ -53,12 +51,12 @@ for (const product of productList){
   shopdiv.appendChild(card);
 }
 
-
+const cartList = [];
 function showCart(){
   
 }
 function addProduct(){
- 
+  
 }
 function removeProduct(){
   
