@@ -15,12 +15,10 @@ const productList = [
 const shopdiv = document.getElementById("shop");
 for (const product of productList){
   const card = document.createElement("div");
-  const cardBody = document.createElement("div");
   const cardImg = document.createElement("img");
   const cardTitle = document.createElement("p");
   const cardPrice = document.createElement("p");
   const cardDescription = document.createElement("p");
-  const cardFooter = document.createElement("div");
   const infoBtn = document.createElement("button");
   const addCartBtn = document.createElement("button");
 
@@ -45,16 +43,13 @@ for (const product of productList){
     console.log("Product added to cart");
     addProduct();
   }
-  cardBody.appendChild(cardImg);
-  cardBody.appendChild(cardTitle);
-  cardBody.appendChild(cardPrice);
-  cardBody.appendChild(cardDescription);
+  card.appendChild(cardImg);
+  card.appendChild(cardTitle);
+  card.appendChild(cardPrice);
+  card.appendChild(cardDescription);
 
-  cardFooter.appendChild(infoBtn);
-  cardFooter.appendChild(addCartBtn);
-
-  card.appendChild(cardBody);
-  card.appendChild(cardFooter);
+  card.appendChild(infoBtn);
+  card.appendChild(addCartBtn);
 
   shopdiv.appendChild(card);
 }
