@@ -8,8 +8,15 @@ class Product {
 }
 
 const productList = [
-  new Product ("images/knittedShirt.jpg","Knitted Shirt","15.99 $","Handmade by: Eva"),
-  new Product ("images/crotchetCat.jpg","Crochet Cat","5.99 $","Handmade by: Maria")
+  new Product ("images/crochetChickens.jpg","3 pack Chickens","35.99 $","100% cotton, 25 cm / 9,8 inch tall"),
+  new Product ("images/crotchetCat.jpg","Crochet Cat","29.99 $","100% cotton, 100 cm / 39,4 inch tall"),
+  new Product ("images/crotchetPinguin.jpg","Crochet Pinguin","15.99 $","100% cotton, 15 cm / 5,9 inch tall"),
+  new Product ("images/knittedShirt.jpg","Knitted Shirt","35.99 $","100% cotton, size S-XXL / 4-22"),
+  new Product ("images/knittedSocks.jpg","Knitted Socks","15.99 $","100% wool, size 35-40 / 3-8"),
+  new Product ("images/knittedSweater.jpg","Knitted Sweater","5.99 $","100% wool, size S-XXL / 4-22"),
+  new Product ("images/sewingApron.jpg","Kitchen Apron","15.99 $","100% cotton, Unisex"),
+  new Product ("images/sewingTravelpurse.jpg","Traveling Purse","5.99 $","100% cotton, 25 cm / 9,8 inch tall"),
+  new Product ("images/sewingBag.jpg","2 pack Gift Bags","15.99 $","100% cotton, 45x25 cm / 17,7x9,8 inch")
 ];
 
 const shopdiv = document.getElementById("shop");
