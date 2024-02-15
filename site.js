@@ -19,6 +19,7 @@ const productList = [
   new Product ("images/sewingBag.jpg","2 pack Gift Bags","15.99 $","100% cotton, 45x25 cm / 17,7x9,8 inch")
 ];
 let cartList = [];
+let totalPrice = 0;
 
 const shopdiv = document.getElementById("shop");
 for (const product of productList) {
@@ -76,7 +77,6 @@ for (const product of cartList) {
   cart.appendChild(ul);
 }
 
-
 function productInfo(product) {
   console.log(product.description);
 }
@@ -84,6 +84,7 @@ function addProduct(product) {
   cartList.push(product);
   console.log("Placeholder: Product added to cart");
   document.getElementById("cart_list").innerHTML = "";
+  const cartPrice = document.getElementById("cartTotal");
   const cart = document.getElementById("cart_list");
   for (const product of cartList) {
     const ul = document.createElement("ul");
@@ -96,16 +97,22 @@ function addProduct(product) {
 
     ul.appendChild(li);
     cart.appendChild(ul);
+
+    totalPrice += parseFloat(product.price);
   }
+  cartPrice.innerText = totalPrice + "$";
 }
 function removeProduct(){
   console.log("Placeholder: Cart is reset");
   cartList = [];
   document.getElementById("cart_list").innerHTML = "";
-  
+  const cartPrice = document.getElementById("cartTotal");
+  cartPrice.innerText = "Total: 0$"
 }
 function checkOut(){
   console.log("Thank you for purchased, Welcome back!");
   cartList = [];
   document.getElementById("cart_list").innerHTML = "";
+  const cartPrice = document.getElementById("cartTotal");
+  cartPrice.innerText = "Total: 0$"
 }
