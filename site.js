@@ -1,9 +1,9 @@
 class Product {
-  constructor(img,title,price,description){
-    this.img = img
-    this.title = title
-    this.price = price
-    this.description = description
+  constructor(img, title, price, description) {
+    this.img = img;
+    this.title = title;
+    this.price = price;
+    this.description = description;
   }
 }
 
@@ -18,8 +18,16 @@ const productList = [
   new Product ("images/sewingTravelpurse.jpg","Traveling Purse","5.99 $","100% cotton, 25 cm / 9,8 inch tall"),
   new Product ("images/sewingBag.jpg","2 pack Gift Bags","15.99 $","100% cotton, 45x25 cm / 17,7x9,8 inch")
 ];
+const cartList = [
+  productList[1],
+  productList[3],
+  productList[5],
+  productList[7],
+];
+console.log(cartList);
+
 const shopdiv = document.getElementById("shop");
-for (const product of productList){
+for (const product of productList) {
   const card = document.createElement("div");
   const cardImg = document.createElement("img");
   const cardTitle = document.createElement("p");
@@ -33,8 +41,8 @@ for (const product of productList){
   cardTitle.classList.add("product_title");
   cardPrice.classList.add("product_price");
   cardDescription.classList.add("product_description");
-  infoBtn.classList.add("card-btn","grey");
-  addCartBtn.classList.add("card-btn","green");
+  infoBtn.classList.add("card-btn", "grey");
+  addCartBtn.classList.add("card-btn", "green");
 
   cardImg.src = product.img;
   cardTitle.innerText = product.title;
@@ -43,12 +51,12 @@ for (const product of productList){
   infoBtn.innerText = "View product information";
   infoBtn.onclick = () => {
     console.log("Product information");
-  }
+  };
   addCartBtn.innerText = "Add to cart";
   addCartBtn.onclick = () => {
     console.log("Product added to cart");
     addProduct();
-  }
+  };
   card.appendChild(cardImg);
   card.appendChild(cardTitle);
   card.appendChild(cardPrice);
@@ -60,22 +68,20 @@ for (const product of productList){
   shopdiv.appendChild(card);
 }
 
-const cartList = [
-  new Product ("images/knittedSweater.jpg","Knitted Sweater","5.99 $","100% wool, size S-XXL / 4-22"),
-  new Product ("images/sewingApron.jpg","Kitchen Apron","15.99 $","100% cotton, Unisex, Size M-L / 8-14"),
-  new Product ("images/sewingTravelpurse.jpg","Traveling Purse","5.99 $","100% cotton, 25 cm / 9,8 inch tall"),
-  new Product ("images/sewingBag.jpg","2 pack Gift Bags","15.99 $","100% cotton, 45x25 cm / 17,7x9,8 inch")
-];
-console.log(cartList);
 const cart = document.getElementById("cart_list");
 for (const product of cartList) {
-  const li = documet.createElement("li");
-  li.innerText = product.title;
-  cart_list.appendChild(li);
+  const li = document.createElement("li");
+
+  li.classList.add("list-group-item");
+
+  li.innerText = product.title + " : " + product.price ;
+
+  cart.appendChild(li);
 }
 
-function addProduct(){
-
+function addProduct() {
+  // Placeholder function for adding a product to the cart
+  console.log("Placeholder: Product added to cart");
 }
 function removeProduct(){
   
