@@ -42,13 +42,14 @@ for (const product of productList) {
   cardTitle.innerText = product.title;
   cardPrice.innerText = product.price;
   cardDescription.innerText = product.description;
+
   infoBtn.innerText = "View product information";
   infoBtn.onclick = () => {
-    productInfo()
+    productInfo(product)
   };
   addCartBtn.innerText = "Add to cart";
   addCartBtn.onclick = () => {
-    addProduct();
+    addProduct(product);
   };
   card.appendChild(cardImg);
   card.appendChild(cardTitle);
@@ -63,26 +64,47 @@ for (const product of productList) {
 
 const cart = document.getElementById("cart_list");
 for (const product of cartList) {
+  const ul = document.createElement("ul");
   const li = document.createElement("li");
 
+  ul.classList.add("list-group");
   li.classList.add("list-group-item");
 
   li.innerText = product.title + " : " + product.price;
 
-  cart.appendChild(li);
+  ul.appendChild(li);
+  cart.appendChild(ul);
 }
 
-function productInfo() {
-  console.log("Placeholder: Product info");
+
+function productInfo(product) {
+  console.log(product.description);
 }
-function addProduct() {
+function addProduct(product) {
+  cartList.push(product);
   console.log("Placeholder: Product added to cart");
-  let addProduct = {title:this.title, price:this.price};
-  cartList.push(addProduct);
+  const cart = document.getElementById("cart_list");
+  for (const product of cartList) {
+    const ul = document.createElement("ul");
+    const li = document.createElement("li");
+
+    ul.classList.add("list-group");
+    li.classList.add("list-group-item");
+
+    li.innerText = product.title + " : " + product.price;
+
+    ul.appendChild(li);
+    cart.appendChild(ul);
+  }
 }
 function removeProduct(){
   console.log("Placeholder: Cart is reset");
+  cartList = [];
+  document.getElementById("cart_list").innerHTML = "";
+  
 }
 function checkOut(){
   console.log("Thank you for purchased, Welcome back!");
+  cartList = [];
+  document.getElementById("cart_list").innerHTML = "";
 }

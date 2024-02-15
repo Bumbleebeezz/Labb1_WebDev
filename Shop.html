@@ -32,10 +32,11 @@
       <div class="cart row">
         <div class="col-auto m-3">
           <p class="cart_header">Shopping Cart</p>
-          <ul id="cart_list" class="list-group">
-          </ul>
-          <button class="btn btn-outline-danger" onclick="removeProduct()">Empty cart</button>
-          <button class="btn btn-outline-success" onclick="checkOut()">Check out</button>
+          <div id="cart_list"></div>
+            <ul class="list-group">
+            </ul>
+            <button class="btn btn-outline-danger" onclick="removeProduct()">Empty cart</button>
+            <button class="btn btn-outline-success" onclick="checkOut()">Check out</button>
         </div>
         <div class="col-1"></div>
         <div id="shop" class="col d-flex flex-wrap"></div>
