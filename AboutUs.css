@@ -8,7 +8,7 @@ h1 h2 h3 h4 h5 h6  {
 }
 .header_img {
   width: 200px;
-  height: 200px;
+  height: auto;
   border-radius: 50%;
   margin: 10px;
   border: 3px solid #7a7a7a;
@@ -21,13 +21,16 @@ h1 h2 h3 h4 h5 h6  {
   font-style: italic;
   font-size: 15px;
 }
+.link_color{
+  color: white;
+}
 .mainContent {
   font-family: Yu Gothic Regular;
 }
 .profile_img {
   border-radius: 50%;
   margin: 10px;
-  width: 200px;
+  width: 150px;
   height: auto;
   border: 3px solid #7a7a7a;
 }
