@@ -18,13 +18,7 @@ const productList = [
   new Product ("images/sewingTravelpurse.jpg","Traveling Purse","5.99 $","100% cotton, 25 cm / 9,8 inch tall"),
   new Product ("images/sewingBag.jpg","2 pack Gift Bags","15.99 $","100% cotton, 45x25 cm / 17,7x9,8 inch")
 ];
-const cartList = [
-  productList[1],
-  productList[3],
-  productList[5],
-  productList[7],
-];
-console.log(cartList);
+let cartList = [];
 
 const shopdiv = document.getElementById("shop");
 for (const product of productList) {
@@ -73,7 +67,7 @@ for (const product of cartList) {
 
   li.classList.add("list-group-item");
 
-  li.innerText = product.title + " : " + product.price ;
+  li.innerText = product.title + " : " + product.price;
 
   cart.appendChild(li);
 }
@@ -83,9 +77,11 @@ function productInfo() {
 }
 function addProduct() {
   console.log("Placeholder: Product added to cart");
+  let addProduct = {title:this.title, price:this.price};
+  cartList.push(addProduct);
 }
 function removeProduct(){
-  
+  console.log("Placeholder: Cart is reset");
 }
 function checkOut(){
   console.log("Thank you for purchased, Welcome back!");
