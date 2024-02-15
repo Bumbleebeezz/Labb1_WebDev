@@ -50,11 +50,10 @@ for (const product of productList) {
   cardDescription.innerText = product.description;
   infoBtn.innerText = "View product information";
   infoBtn.onclick = () => {
-    console.log("Product information");
+    productInfo()
   };
   addCartBtn.innerText = "Add to cart";
   addCartBtn.onclick = () => {
-    console.log("Product added to cart");
     addProduct();
   };
   card.appendChild(cardImg);
@@ -79,10 +78,15 @@ for (const product of cartList) {
   cart.appendChild(li);
 }
 
+function productInfo() {
+  console.log("Placeholder: Product info");
+}
 function addProduct() {
-  // Placeholder function for adding a product to the cart
   console.log("Placeholder: Product added to cart");
 }
 function removeProduct(){
   
+}
+function checkOut(){
+  console.log("Thank you for purchased, Welcome back!");
 }

@@ -28,23 +28,18 @@
         </div>
       </div>
     </header>
-    <main class="main m-3">
-      <div class="cart m-3">
-        <button
-          type="button"
-          class="cart_btn btn btn-outline-secondary "
-        >
-        <a href="">
-          <img class="cart_img" src="images/cart.png" alt="cart_btn" />
-        </a>
-        </button>
-        <div class="content d-flex flex-wrap justify-content-center">
-          <p>Shopping Cart</p>
+    <main class="main m-2 container">
+      <div class="cart m-2 row">
+        <div class="col-auto">
+          <p class="cart_header">Shopping Cart</p>
           <ul id="cart_list" class="list-group">
           </ul>
+          <button class="btn btn-outline-danger" onclick="removeProduct()">Empty cart</button>
+          <button class="btn btn-outline-success" onclick="checkOut()">Check out</button>
         </div>
+        <div class="col-1"></div>
+        <div id="shop" class="col m-2 d-flex flex-wrap"></div>
       </div>
-      <div id="shop" class="content d-flex flex-wrap justify-content-center"></div>
       <!-- Modal -->
       <div
         class="modal fade"

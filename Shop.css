@@ -20,7 +20,7 @@ h1 {
 }
 .product_img {
     width: auto;
-    height: 300px;
+    height: 350px;
     border-radius: 10%;
 }
 .product_title{
@@ -34,9 +34,9 @@ h1 {
   font-size: 25px;
 }
 .product_description {
-  font-family: Yu Gothic Light;
+  font-family: Yu Gothic;
   color: #7a7a7a;
-  font-size: 20px;
+  font-size: 15px;
 }
 .buttons .menu {
   font-family: Yu Gothic Light;
@@ -46,8 +46,8 @@ h1 {
   border-radius: 10%;
   border: none;
   font-family: Yu Gothic;
-  font-size: 20px;
-  margin: 10px;
+  font-size: 15px;
+  margin: 5px;
 }
 .gray {
   background-color: #cfcece;
@@ -59,11 +59,10 @@ h1 {
   background-color: rgb(219, 60, 60);
 }
 .card {
-  margin: 10px;
+  margin: 30px;
 }
-.cart_img {
-  width: 30px;
-  height: auto;
+.cart_header {
+  font-size: 30px;
 }
 .footer_img {
     width: 100px;
