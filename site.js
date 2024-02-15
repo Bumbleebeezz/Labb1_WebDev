@@ -40,6 +40,7 @@ for (const product of productList) {
   addCartBtn.classList.add("card-btn", "green");
 
   cardImg.src = product.img;
+  cardImg.alt = product.title;
   cardTitle.innerText = product.title;
   cardPrice.innerText = product.price;
   cardDescription.innerText = product.description;
@@ -100,7 +101,7 @@ function addProduct(product) {
 
     totalPrice += parseFloat(product.price);
   }
-  cartPrice.innerText = totalPrice + "$";
+  cartPrice.innerText = "Total: " + totalPrice + "$";
 }
 function removeProduct(){
   console.log("Placeholder: Cart is reset");
