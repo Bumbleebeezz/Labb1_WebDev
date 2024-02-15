@@ -83,6 +83,7 @@ function productInfo(product) {
 function addProduct(product) {
   cartList.push(product);
   console.log("Placeholder: Product added to cart");
+  document.getElementById("cart_list").innerHTML = "";
   const cart = document.getElementById("cart_list");
   for (const product of cartList) {
     const ul = document.createElement("ul");
