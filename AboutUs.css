@@ -13,8 +13,9 @@ h1 h2 h3 h4 h5 h6  {
   margin: 10px;
   border: 3px solid #7a7a7a;
 }
-.buttons{
+.buttons .menu {
   font-family: Yu Gothic Light;
+  font-size: 20px;
 }
 .contact_text{
   font-style: italic;

@@ -14,7 +14,7 @@ const productList = [
   new Product ("images/knittedShirt.jpg","Knitted Shirt","35.99 $","100% cotton, size S-XXL / 4-22"),
   new Product ("images/knittedSocks.jpg","Knitted Socks","15.99 $","100% wool, size 35-40 / 3-8"),
   new Product ("images/knittedSweater.jpg","Knitted Sweater","5.99 $","100% wool, size S-XXL / 4-22"),
-  new Product ("images/sewingApron.jpg","Kitchen Apron","15.99 $","100% cotton, Unisex"),
+  new Product ("images/sewingApron.jpg","Kitchen Apron","15.99 $","100% cotton, Unisex, Size M-L / 8-14"),
   new Product ("images/sewingTravelpurse.jpg","Traveling Purse","5.99 $","100% cotton, 25 cm / 9,8 inch tall"),
   new Product ("images/sewingBag.jpg","2 pack Gift Bags","15.99 $","100% cotton, 45x25 cm / 17,7x9,8 inch")
 ];

@@ -38,8 +38,9 @@ h1 {
   font-style: italic;
   color: rgb(77, 133, 136);
 }
-.buttons{
+.buttons .menu {
   font-family: Yu Gothic Light;
+  font-size: 20px;
 }
 .footer_img { 
   width: 100px;
