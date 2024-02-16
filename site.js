@@ -104,12 +104,12 @@ function addProduct(product) {
   cartPrice.innerText = "Total: " + totalPrice + "$";
 }
 function removeProduct(){
-  console.log("Placeholder: Cart is reset");
   cartList = [];
   document.getElementById("cart_list").innerHTML = "";
   const cartPrice = document.getElementById("cartTotal");
   cartPrice.innerText = "Total: 0$"
   totalPrice = 0;
+  console.log("Placeholder: Cart is reset");
 }
 function checkOut(){
   console.log("Thank you for purchased, Welcome back!");
