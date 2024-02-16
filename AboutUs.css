@@ -3,8 +3,11 @@ h1 h2 h3 h4 h5 h6  {
 }
 
 .header {  
-  background-color: rgb(75, 91, 131);
+  background-color: #474954;
   border: 3px solid #7a7a7a;
+}
+.body {
+  background-color: #F6F7F8;
 }
 .header_img {
   width: 200px;
@@ -20,9 +23,7 @@ h1 h2 h3 h4 h5 h6  {
 .contact_text{
   font-style: italic;
   font-size: 15px;
-}
-.link_color{
-  color: white;
+  color: #8b5022;
 }
 .mainContent {
   font-family: Yu Gothic Regular;
@@ -47,6 +48,7 @@ h1 h2 h3 h4 h5 h6  {
 }
 .bold_text{
   font-family: fantasy;
+  color: #8b5022;
 }
 
 #company {

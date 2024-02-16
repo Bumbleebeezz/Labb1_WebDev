@@ -3,8 +3,11 @@ h1 {
 }
 
 .header {  
-  background-color: rgb(75, 91, 131);
+  background-color: #474954;
   border: 3px solid #7a7a7a;
+}
+.body {
+  background-color: #F6F7F8;
 }
 .header_img {
   width: 200px;
@@ -26,7 +29,7 @@ h1 {
   font-size: 35px;
   font-family: Yu Gothic Light;
   text-decoration: underline;
-  color: rgb(111, 37, 37);
+  color: #8b5022;
 }
 .event_time, .news_header {
   font-family: fantasy;
@@ -36,7 +39,7 @@ h1 {
 }
 .quote {
   font-style: italic;
-  color: rgb(77, 133, 136);
+  color: #8b5022;
 }
 .buttons .menu {
   font-family: Yu Gothic Light;
