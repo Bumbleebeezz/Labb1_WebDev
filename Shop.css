@@ -19,8 +19,8 @@ h1 {
   margin: 50px;
 }
 .product_img {
-    width: auto;
-    height: 250px;
+    width: 250px;
+    height: auto;
     border-radius: 10%;
 }
 .product_title{
