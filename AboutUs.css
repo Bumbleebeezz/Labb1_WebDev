@@ -20,16 +20,21 @@
   font-style: italic;
   font-size: 15px;
   color: #8b5022;
+  margin-bottom: 50px;
 }
 .mainContent {
   font-family: Yu Gothic Regular;
 }
 .profile_img {
   border-radius: 20%;
-  margin: 10px;
+  margin-top: 80px;
+  margin-bottom: 50px;
   width: 30rem;
   height: auto;
   border: 1px solid #7a7a7a;
+}
+.divider {
+  background-color: #474954;
 }
 .contactInfo {
   color: #ffffff;
