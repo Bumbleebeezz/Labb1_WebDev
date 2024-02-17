@@ -27,7 +27,6 @@ for (const product of productList) {
   const cardImg = document.createElement("img");
   const cardTitle = document.createElement("p");
   const cardPrice = document.createElement("p");
-  const cardDescription = document.createElement("p");
   const infoBtn = document.createElement("button");
   const addCartBtn = document.createElement("button");
 
@@ -35,7 +34,6 @@ for (const product of productList) {
   cardImg.classList.add("product_img");
   cardTitle.classList.add("product_title");
   cardPrice.classList.add("product_price");
-  cardDescription.classList.add("product_description");
   infoBtn.classList.add("card-btn", "grey");
   addCartBtn.classList.add("card-btn", "green");
 
@@ -43,7 +41,6 @@ for (const product of productList) {
   cardImg.alt = product.title;
   cardTitle.innerText = product.title;
   cardPrice.innerText = product.price;
-  cardDescription.innerText = product.description;
 
   infoBtn.innerText = "View product information";
   infoBtn.onclick = () => {
@@ -56,7 +53,6 @@ for (const product of productList) {
   card.appendChild(cardImg);
   card.appendChild(cardTitle);
   card.appendChild(cardPrice);
-  card.appendChild(cardDescription);
 
   card.appendChild(infoBtn);
   card.appendChild(addCartBtn);
