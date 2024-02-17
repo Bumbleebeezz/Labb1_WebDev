@@ -79,6 +79,8 @@ for (const product of cartList) {
 }
 
 function productInfo(product) {
+  let myModal = new bootstrap.Modal(document.getElementById('shopModal'), {});
+  myModal.show();
   console.log(product.description);
 }
 function addProduct(product) {
