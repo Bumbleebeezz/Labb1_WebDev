@@ -25,11 +25,11 @@
   font-family: Yu Gothic Regular;
 }
 .profile_img {
-  border-radius: 50%;
+  border-radius: 20%;
   margin: 10px;
-  width: 10rem;
-  height: 10rem;
-  border: 3px solid #7a7a7a;
+  width: 30rem;
+  height: auto;
+  border: 1px solid #7a7a7a;
 }
 .contactInfo {
   color: #ffffff;
